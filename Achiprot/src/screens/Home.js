@@ -15,6 +15,7 @@ const Home = () =>{
             size={100}
             color = "green"
             style={styles.icon}
+            onPress={CallUser}
         />
         <View style={styles.root2}>
              <Text style={styles.titre3}>achiprot@achiprot.com</Text>
