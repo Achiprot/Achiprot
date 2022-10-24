@@ -6,6 +6,15 @@ import call from 'react-native-phone-call'
 
 
 const Home = () =>{
+    const [inputCall,setInputCall] = useState('+22893396936')
+
+    const CallUser = () =>{
+        const args ={
+            number: inputCall,
+            prompt: true,
+        }
+        call(args).catch(console.error)
+    }
     return(
     <View style={styles.root}>
         <Image source={require('../../assets/index.png')}/>
