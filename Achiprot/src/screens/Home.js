@@ -17,22 +17,31 @@ const Home = () =>{
     }
     return(
     <View style={styles.root}>
-        <Image source={require('../../assets/index.png')}/>
-        <Text style={styles.titre}>Service De Cybersecurité</Text>
-        <Text style={styles.titre2}>Cybersecurité</Text>
-        <Icon name="phone" 
-            size={100}
-            color = "green"
-            style={styles.icon}
-            onPress={CallUser}
-        />
-        <View style={styles.root2}>
-             <Text style={styles.titre3}>achiprot@achiprot.com</Text>
-             <Text>Siège(Togo) : +22893396936 <Image source={require('../../assets/togo.png')}/></Text>
-
+        <View style={styles.logo}>
+                    <Image source={require('../../assets/index.png')} style={styles.logo}/>
         </View>
-       
+        <View style={styles.second}>
+            
+            
+            <Text style={styles.titre}>Service De Cybersecurité</Text>
+            <Text style={styles.titre2}>Cybersecurité</Text>
+            <Icon name="phone" 
+                size={100}
+                color = "green"
+                style={styles.icon}
+                onPress={CallUser}
+            />
+            <View style={styles.root2}>
+                <Text style={styles.titre3}>achiprot@achiprot.com</Text>
+            </View> 
+            <View style={styles.root3}>
+                    <Text>Siège(Togo) : +22893396936 </Text>
+            </View>
+        
+            </View>
+        
     </View>
+    
     
 
     )
@@ -46,6 +55,7 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         
     },
+    
     icon:{
         marginTop:50
     },
@@ -54,8 +64,17 @@ const styles = StyleSheet.create({
         
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor: "grey",
+    
         marginTop:200
+        
+    },
+
+    root3:{
+        
+        alignItems:'center',
+        justifyContent:'center',
+        marginRight: 150,
+        marginTop:10
         
     },
     titre:{
@@ -71,6 +90,17 @@ const styles = StyleSheet.create({
         fontSize:18,
         
     },
+    logo:{
+        marginRight:120,
+        marginBottom:40
+    },
+    second:{
+     
+        alignItems:'center',
+        justifyContent:'center',
+        
+    }
+
     
 });
 export default Home;
