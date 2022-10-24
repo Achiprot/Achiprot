@@ -2,7 +2,7 @@ import  React,{useState,useEffect} from 'react';
 import { View, Text,StyleSheet,Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-
+import call from 'react-native-phone-call'
 
 
 const Home = () =>{
