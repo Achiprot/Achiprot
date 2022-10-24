@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import { StyleSheet, Text, View, Image,StatusBar,useColorScheme,SafeAreaView } from 'react-native';
+import Main from './src/navigation/Main';
+
+const App = () =>{
+
+  const isDarkMode = useColorScheme() === "dark"
+
+  const backgroundStyle = {
+    flex:1
+  }
   return (
-    <View style={styles.container}>
-      <Text>Achiprot project</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar barStyle={isDarkMode ? "light-content": "dark-content"}  />
+      <Main/>
+      
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
