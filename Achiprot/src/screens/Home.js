@@ -23,7 +23,7 @@ const Home = () =>{
         <View style={styles.second}>
             
             
-            <Text style={styles.titre}>Service De Cybersecurité</Text>
+            <Text style={styles.titre}>Service De </Text>
             <Text style={styles.titre2}>Cybersecurité</Text>
             <Icon name="phone" 
                 size={100}
