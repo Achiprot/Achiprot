@@ -64,8 +64,7 @@ const styles = StyleSheet.create({
         
         alignItems:'center',
         justifyContent:'center',
-    
-        marginTop:200
+        marginTop:150
         
     },
 
@@ -73,7 +72,7 @@ const styles = StyleSheet.create({
         
         alignItems:'center',
         justifyContent:'center',
-        marginRight: 150,
+     
         marginTop:10
         
     },
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
     },
     logo:{
         marginRight:120,
-        marginBottom:40
+        marginBottom:50
     },
     second:{
      
