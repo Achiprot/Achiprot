@@ -20,6 +20,18 @@ const Home = () =>{
         <View style={styles.logo}>
                     <Image source={require('../../assets/index.png')} style={styles.logo}/>
         </View>
+        <Icon name="car" 
+                size={35}
+                color = "grey"
+              
+                onPress={CallUser}
+            />
+        <Icon name="globe" 
+                size={35}
+                color = "grey"
+              
+                onPress={CallUser}
+            />
         <View style={styles.second}>
             
             
