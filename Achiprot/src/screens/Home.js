@@ -20,18 +20,7 @@ const Home = () =>{
         <View style={styles.logo}>
                     <Image source={require('../../assets/index.png')} style={styles.logo}/>
         </View>
-        <Icon name="car" 
-                size={35}
-                color = "grey"
-              
-                onPress={CallUser}
-            />
-        <Icon name="globe" 
-                size={35}
-                color = "grey"
-              
-                onPress={CallUser}
-            />
+        
         <View style={styles.second}>
             
             
@@ -41,6 +30,18 @@ const Home = () =>{
                 size={100}
                 color = "green"
                 style={styles.icon}
+                onPress={CallUser}
+            />
+            <Icon name="car" 
+                size={35}
+                color = "grey"
+                style={styles.icon3}
+                onPress={CallUser}
+            />
+            <Icon name="globe" 
+                size={35}
+                color = "grey"
+                style={styles.icon2}
                 onPress={CallUser}
             />
             <View style={styles.root2}>
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
         
         alignItems:'center',
         justifyContent:'center',
-        marginTop:150
+        marginTop:100
         
     },
 
@@ -84,8 +85,6 @@ const styles = StyleSheet.create({
         
         alignItems:'center',
         justifyContent:'center',
-     
-        marginTop:10
         
     },
     titre:{
@@ -110,6 +109,12 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent:'center',
         
+    },
+    icon2:{
+        marginRight: 120
+    },
+    icon3:{
+        marginLeft: 120,
     }
 
     
