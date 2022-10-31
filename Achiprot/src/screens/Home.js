@@ -1,5 +1,5 @@
 import  React,{useState,useEffect} from 'react';
-import { View, Text,StyleSheet,Image } from 'react-native';
+import { View, Text,StyleSheet,Image, Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 import call from 'react-native-phone-call'
@@ -7,7 +7,7 @@ import call from 'react-native-phone-call'
 
 const Home = () =>{
     const [inputCall,setInputCall] = useState('+22893396936')
-
+   
     const CallUser = () =>{
         const args ={
             number: inputCall,
@@ -36,13 +36,13 @@ const Home = () =>{
                 size={35}
                 color = "grey"
                 style={styles.icon3}
-                onPress={CallUser}
+                onPress={() => Linking.openURL('https://www.achiprot.com/Achiprot-voiture/')}
             />
             <Icon name="globe" 
                 size={35}
                 color = "grey"
                 style={styles.icon2}
-                onPress={CallUser}
+                onPress={()=>{ Linking.openURL('https://www.achiprot.com/')}}
             />
             <View style={styles.root2}>
                 <Text style={styles.titre3}>achiprot@achiprot.com</Text>
